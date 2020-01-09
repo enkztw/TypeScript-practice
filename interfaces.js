@@ -13,3 +13,25 @@ var rect2 = {
         height: 40
     }
 };
+rect2.color = 'blue';
+var rect3 = {};
+var rect4 = {};
+var rect5 = {
+    id: '5',
+    size: {
+        width: 30,
+        height: 15
+    },
+    getArea: function () {
+        return this.size.width * this.size.height;
+    }
+};
+var Clock = /** @class */ (function () {
+    function Clock() {
+        this.time = new Date();
+    }
+    Clock.prototype.setTime = function (date) {
+        this.time = date;
+    };
+    return Clock;
+}());

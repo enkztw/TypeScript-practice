@@ -43,3 +43,15 @@ const rect5: RectWithArea = {
         return this.size.width * this.size.height
     }
 }
+
+interface iClock {
+    time: Date,
+    setTime(date: Date): void
+}
+
+class Clock implements iClock {
+    time: Date = new Date()
+    setTime(date: Date): void {
+        this.time = date
+    }
+}
