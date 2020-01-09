@@ -26,4 +26,20 @@ const rect2: Rect = {
 
 rect2.color = 'blue';
 
+const rect3 = {} as Rect;
+const rect4 = <Rect>{}
 
+interface RectWithArea extends Rect {
+    getArea: () => number
+}
+
+const rect5: RectWithArea = {
+    id: '5',
+    size: {
+        width: 30,
+        height: 15
+    },
+    getArea(): number {
+        return this.size.width * this.size.height
+    }
+}
