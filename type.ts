@@ -17,7 +17,8 @@ const ownInfo: [string, number] = ['Max', 162];
 let something: any = 'Nope, anything';
 something = 42;
 
-function sayMyName(name: string) {
+// Void (nothing in return)
+const sayMyName = (name: string): void => {
     console.log(name);
 }
 
@@ -25,3 +26,18 @@ function sayMyName(name: string) {
 const throwSomeError = (message: string): never => {
     throw new Error(message)
 };
+
+// Type (Alias)
+type Login = string;
+
+const login: Login = 'admin';
+// const login2: Login = 2;
+
+type ID = string | number;
+const id1: ID = 1234;
+const id2: ID = '1234';
+
+type someType = string | null | undefined;
+
+
+

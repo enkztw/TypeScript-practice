@@ -11,9 +11,9 @@ var ownInfo = ['Max', 162];
 // Any
 var something = 'Nope, anything';
 something = 42;
-function sayMyName(name) {
+var sayMyName = function (name) {
     console.log(name);
-}
+};
 // Never
 var throwSomeError = function (message) {
     throw new Error(message);
