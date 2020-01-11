@@ -55,3 +55,13 @@ class Clock implements iClock {
         this.time = date
     }
 }
+
+interface Styles {
+    [key: string]: string
+}
+
+const css: Styles = {
+    border: '1px solid red',
+    marginTop: '2px',
+    borderRadius: '5px',
+}
